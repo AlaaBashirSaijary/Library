@@ -19,9 +19,7 @@ return new class extends Migration
             $table->text('abilities')->nullable();
             $table->timestamp('last_used_at')->nullable();
             $table->timestamp('expires_at')->nullable();
-            $table->timestamps();  //create colum updated_at and created_at
-            $table->softDeletes(); //create colum delete_at
-
+            $table->timestamps();
         });
     }
 
